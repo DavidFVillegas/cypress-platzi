@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {    
-    "cypress": "cypress open --browser chrome --e2e"
+  "scripts": {
+    "e2e": "cypress open --browser chrome --e2e",
+    "e2e:headless": "cypress run --browser chrome --headless --e2e",
+    "e2e:headless:spec": "cypress run --browser chrome --headless --spec cypress/e2e/platzi_cypress_fundamentos/b-elementos_and_localizadores/3-tiposDeLocalizadores.cy.js"
   },
   "keywords": [
     "cypress",
@@ -15,6 +17,7 @@
   "author": "david villegas",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.8.1"
+    "cypress": "^13.8.1",
+    "prettier": "^3.2.5"
   }
 }
